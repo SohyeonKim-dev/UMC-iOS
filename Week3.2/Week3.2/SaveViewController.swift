@@ -9,7 +9,7 @@ import UIKit
 
 class SaveViewController: UIViewController {
     
-    var textViewData = ""
+    var textViewData = "default text2"
     
     @IBOutlet weak var textView: UITextView!
     
