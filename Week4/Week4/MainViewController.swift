@@ -7,15 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
+class MainViewController: UIViewController {
     
     @IBAction func plusButtonTapped(_ sender: Any) {
         guard let addViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddViewController") as? AddViewController else {return}
@@ -27,7 +19,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         present(addViewController, animated: true)
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
