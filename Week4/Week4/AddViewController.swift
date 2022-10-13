@@ -15,8 +15,10 @@ class AddViewController: UIViewController {
     var delegate: memoDataPassProtocol?
 
     @IBAction func saveButtonTapped(_ sender: Any) {
-        delegate?.titleChangeFunc(text: titleTextField.text!)
-        delegate?.contentChangeFunc(text: contentTextField.text!)
+//        delegate?.titleChangeFunc(text: titleTextField.text ?? "")
+//        delegate?.contentChangeFunc(text: contentTextField.text ?? "")
+//        
+        // main tableview cell에 내용 표시하는 기능
     }
     
     override func viewDidLoad() {

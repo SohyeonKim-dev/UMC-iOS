@@ -9,6 +9,8 @@ import UIKit
 
 class ContentViewController: UIViewController {
     
+    @IBOutlet weak var ContextTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
