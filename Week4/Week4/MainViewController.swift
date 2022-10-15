@@ -15,7 +15,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var MainTableView: UITableView!
     
     func titleChangeFunc(text: String) {
-        // 이게 아니라 table view cell을 추가하는 동작을 넣어야 하나?
+        // Protocol이 아니라 table view cell을 추가하는 동작?
         return
     }
     
