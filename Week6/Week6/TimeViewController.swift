@@ -9,7 +9,7 @@ import UIKit
 
 class TimeViewController: UIViewController {
     let timeSelector: Selector = #selector(TimeViewController.updateTime)
-    let interval = 1.0
+    let timeInterval = 1.0
     var alarmTime: String?
     var alertFlag = false
 
@@ -19,30 +19,35 @@ class TimeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Timer.scheduledTimer(timeInterval: interval, target: self, selector: timeSelector, userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: timeSelector, userInfo: nil, repeats: true)
     }
     
     @IBAction func changeDatePicker(_ sender: UIDatePicker) {
         let datePickerView = sender
-
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss EEE"
-        // yyyy-MM-dd HH:mm 로 변경
-        pickerTime.text = "일어나? : " + formatter.string(from: datePickerView.date)
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        pickerTime.text = "언제 일어나? : " + formatter.string(from: datePickerView.date)
+        
         formatter.dateFormat = "hh:mm aaa"
         alarmTime = formatter.string(from: datePickerView.date)
+        
+        DispatchQueue.main.async {
+            for color in colorList {
+                datePickerView.tintColor = color
+            }
+            // 여기에서 호출하니까, 변경 시 한번만 반영됨 (위치 고민하기)
+        }
     }
 
-    @objc func updateTime(){
-
+    @objc func updateTime() {
         let date = NSDate()
-
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss EEE"
-        currentTime.text = "지금은? " + formatter.string(from: date as Date)
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        currentTime.text = "지금은 바로! : " + formatter.string(from: date as Date)
 
         formatter.dateFormat = "hh:mm aaa"
         let currentTime = formatter.string(from: date as Date)
+        
         if alarmTime == currentTime {
             if !alertFlag {
                 let lampOnAlert = UIAlertController(title: "알림", message: "설정된 시간입니다!", preferredStyle: UIAlertController.Style.alert)

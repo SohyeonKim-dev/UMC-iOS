@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5586F2D7291182E200B0B570 /* ColorList+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5586F2D6291182E200B0B570 /* ColorList+Extension.swift */; };
 		5592C69A291003D4004B6B1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592C699291003D4004B6B1B /* AppDelegate.swift */; };
 		5592C69C291003D4004B6B1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592C69B291003D4004B6B1B /* SceneDelegate.swift */; };
 		5592C6A1291003D4004B6B1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5592C69F291003D4004B6B1B /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5586F2D6291182E200B0B570 /* ColorList+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorList+Extension.swift"; sourceTree = "<group>"; };
 		5592C696291003D4004B6B1B /* Week6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5592C699291003D4004B6B1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5592C69B291003D4004B6B1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				5592C6AD291003EA004B6B1B /* TimeViewController.swift */,
+				5586F2D6291182E200B0B570 /* ColorList+Extension.swift */,
 				5592C699291003D4004B6B1B /* AppDelegate.swift */,
 				5592C69B291003D4004B6B1B /* SceneDelegate.swift */,
 				5592C69F291003D4004B6B1B /* Main.storyboard */,
@@ -141,6 +144,7 @@
 				5592C69A291003D4004B6B1B /* AppDelegate.swift in Sources */,
 				5592C6AE291003EA004B6B1B /* TimeViewController.swift in Sources */,
 				5592C69C291003D4004B6B1B /* SceneDelegate.swift in Sources */,
+				5586F2D7291182E200B0B570 /* ColorList+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

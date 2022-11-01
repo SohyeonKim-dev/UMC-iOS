@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="paK-3I-dJd">
-                                <rect key="frame" x="20" y="147" width="350" height="368"/>
+                                <rect key="frame" x="20" y="146.99999999999997" width="350" height="368.33333333333326"/>
                                 <color key="tintColor" red="0.32156862749999998" green="0.62745098040000002" blue="0.17734906459999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="changeDatePicker:" destination="xL5-dz-eTr" eventType="valueChanged" id="jo8-Rr-Bje"/>
@@ -51,8 +51,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lblCurrentTime" destination="zdA-rX-5YJ" id="Cfy-Sw-aGw"/>
-                        <outlet property="lblPickerTime" destination="e7I-MP-iB5" id="DXK-LM-Rml"/>
+                        <outlet property="currentTime" destination="zdA-rX-5YJ" id="PuH-kZ-xs0"/>
+                        <outlet property="pickerTime" destination="e7I-MP-iB5" id="qR0-8A-ERm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhh-Oi-WvM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
