@@ -7,16 +7,34 @@
 
 import UIKit
 
-var colorList : [UIColor] = [
-    .darkGray,
-    .purple,
+var datePickerColorList : [UIColor] = [
+    .systemGreen,
+    .systemYellow,
     .orange,
-    .yellow,
+    .red,
+    .purple,
     .blue,
-    .lightGray,
-    .green,
-    .systemPink,
     .systemIndigo,
-    .magenta,
-    .red
+    .darkGray,
+    .lightGray,
+        
+    .systemGreen,
+    .systemYellow,
+    .orange,
+    .red,
+    .purple,
+    .blue,
+    .systemIndigo,
+    .darkGray,
+    .lightGray,
+        
+    .systemGreen,
+    .systemYellow,
+    .orange,
+    .red,
+    .purple,
+    .blue,
+    .systemIndigo,
+    .darkGray,
+    .lightGray
 ]
