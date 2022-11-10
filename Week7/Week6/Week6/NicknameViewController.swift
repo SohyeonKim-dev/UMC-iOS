@@ -26,9 +26,11 @@ class NicknameViewController: UIViewController {
         
         if userID == savedUserID && userPassword == savedUserPassword {
             // TODO: 네비게이션 넘기는 동작
-            navigationController?.pushViewController(timeViewController, animated: true)
+            present(timeViewController, animated: true)
+//            navigationController?.pushViewController(timeViewController, animated: true)
         } else {
             // TODO: Alert?
+            print("User isn't found")
         }
     }
     
@@ -41,7 +43,7 @@ class NicknameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    //    view.backgroundColor = .white
     }
     
 }

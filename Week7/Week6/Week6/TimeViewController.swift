@@ -16,13 +16,11 @@ class TimeViewController: UIViewController {
     @IBOutlet var currentTime: UILabel!
     @IBOutlet var pickerTime: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
-    @IBOutlet weak var imageView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         changeDatePickerColor()
         changeLabelColor()
-        changeImageView()
         
         Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: timeSelector, userInfo: nil, repeats: true)
     }
@@ -49,11 +47,6 @@ class TimeViewController: UIViewController {
                 sleep(3)
             }
         }
-    }
-    
-    func changeImageView() {
-        // TODO: 서버, API 관련 코드 -> API를 통해 이미지를 불러오는 기능
-        
     }
     
     @IBAction func changeDatePicker(_ sender: UIDatePicker) {

@@ -32,8 +32,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1Il-V5-pYo"/>
                                 </constraints>
+                                <color key="tintColor" red="0.24450655260000001" green="0.44962359940000002" blue="0.17734906459999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="회원가입"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="회원가입">
+                                    <color key="baseForegroundColor" red="0.24450655260000001" green="0.44962359940000002" blue="0.17734906459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="baseBackgroundColor" red="0.24450655260000001" green="0.44962359940000002" blue="0.17734906459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="registerButtonTapped:" destination="jRw-M8-wHi" eventType="touchUpInside" id="fC9-C9-SwQ"/>
                                 </connections>
@@ -54,8 +58,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="SxB-y9-js4"/>
                                 </constraints>
+                                <color key="tintColor" red="0.24450655260000001" green="0.44962359940000002" blue="0.17734906459999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="로그인"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="로그인">
+                                    <color key="baseForegroundColor" red="0.24450655260000001" green="0.44962359940000002" blue="0.17734906459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="baseBackgroundColor" red="0.24450655260000001" green="0.44962359940000002" blue="0.17734906459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="loginButtonTapped:" destination="jRw-M8-wHi" eventType="touchUpInside" id="6EL-3K-gMy"/>
                                 </connections>
@@ -91,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcQ-Zn-oeg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-758" y="-100"/>
+            <point key="canvasLocation" x="-758.46153846153845" y="-100.23696682464454"/>
         </scene>
         <!--Time View Controller-->
         <scene sceneID="OKF-TJ-1Ic">
@@ -120,25 +128,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5j-Ut-Jlg">
-                                <rect key="frame" x="32" y="649.33333333333337" width="326" height="110.66666666666663"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fnl-AK-GOP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zdA-rX-5YJ" firstAttribute="leading" secondItem="fnl-AK-GOP" secondAttribute="leading" constant="20" id="37Y-YX-gwZ"/>
                             <constraint firstItem="zdA-rX-5YJ" firstAttribute="top" secondItem="paK-3I-dJd" secondAttribute="bottom" constant="60" id="8D9-JA-bhe"/>
-                            <constraint firstItem="o5j-Ut-Jlg" firstAttribute="top" secondItem="e7I-MP-iB5" secondAttribute="bottom" constant="32" id="Ev2-bI-9j6"/>
                             <constraint firstItem="e7I-MP-iB5" firstAttribute="top" secondItem="zdA-rX-5YJ" secondAttribute="bottom" constant="20" id="Hjo-Q2-aDy"/>
                             <constraint firstItem="paK-3I-dJd" firstAttribute="top" secondItem="fnl-AK-GOP" secondAttribute="top" constant="80" id="JvR-kf-BMp"/>
-                            <constraint firstItem="fnl-AK-GOP" firstAttribute="trailing" secondItem="o5j-Ut-Jlg" secondAttribute="trailing" constant="32" id="Tn2-Dq-on7"/>
                             <constraint firstItem="paK-3I-dJd" firstAttribute="leading" secondItem="9kW-T8-9g5" secondAttribute="leading" constant="20" id="YfZ-sC-5eo"/>
                             <constraint firstAttribute="trailing" secondItem="paK-3I-dJd" secondAttribute="trailing" constant="20" id="agt-q1-Mua"/>
-                            <constraint firstItem="o5j-Ut-Jlg" firstAttribute="leading" secondItem="fnl-AK-GOP" secondAttribute="leading" constant="32" id="bEq-QB-PZK"/>
                             <constraint firstItem="e7I-MP-iB5" firstAttribute="leading" secondItem="fnl-AK-GOP" secondAttribute="leading" constant="20" id="eER-DL-U93"/>
-                            <constraint firstItem="fnl-AK-GOP" firstAttribute="bottom" secondItem="o5j-Ut-Jlg" secondAttribute="bottom" constant="50" id="hop-os-OW1"/>
                             <constraint firstItem="fnl-AK-GOP" firstAttribute="trailing" secondItem="zdA-rX-5YJ" secondAttribute="trailing" constant="20" id="oe3-FD-h8i"/>
                             <constraint firstItem="fnl-AK-GOP" firstAttribute="trailing" secondItem="e7I-MP-iB5" secondAttribute="trailing" constant="20" id="qa3-Or-5c1"/>
                         </constraints>
@@ -146,7 +146,6 @@
                     <connections>
                         <outlet property="currentTime" destination="zdA-rX-5YJ" id="PuH-kZ-xs0"/>
                         <outlet property="datePicker" destination="paK-3I-dJd" id="jAL-nq-dlb"/>
-                        <outlet property="imageView" destination="o5j-Ut-Jlg" id="wD5-q3-6eZ"/>
                         <outlet property="pickerTime" destination="e7I-MP-iB5" id="qR0-8A-ERm"/>
                     </connections>
                 </viewController>
