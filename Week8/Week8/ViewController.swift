@@ -8,23 +8,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var greenView: UIView?
-    @IBOutlet weak var viewTopConstraint: NSLayoutConstraint?
-    @IBOutlet var tapGestureRecognizer: UITapGestureRecognizer?
+    @IBOutlet weak var greenView: UIView!
+    @IBOutlet weak var viewTopConstraint: NSLayoutConstraint!
+    @IBOutlet var tapGestureRecognizer: UITapGestureRecognizer!
+    
+    let nextVC = NextVC()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
-        tapGestureRecognizer?.addTarget(self, action: #selector(greenViewTapped))
+        view.backgroundColor = .white
+        tapGestureRecognizer.addTarget(self, action: #selector(greenViewTapped))
     }
     
     @objc func greenViewTapped() {
         UIView.animate(withDuration: 3,
                        animations: {
-            self.viewTopConstraint?.constant = 300
+            self.viewTopConstraint.constant = 300
             self.view.layoutIfNeeded()
-        }, completion: {_ in
-            self.navigationController?.pushViewController(nextVC(), animated: true)
+        }, completion: { _ in
+            self.navigationController?.pushViewController(self.nextVC, animated: true)
         })
     }
 }

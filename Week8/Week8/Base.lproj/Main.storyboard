@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v7D-0O-O0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -8,6 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="k93-MB-mi4">
+            <objects>
+                <navigationController id="v7D-0O-O0r" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vLT-M4-Ewa">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LfL-mg-ULI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CaT-rT-aXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775" y="1"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -16,8 +32,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xut-Lr-nnn">
-                                <rect key="frame" x="32" y="247" width="326" height="128"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xut-Lr-nnn" customClass="view">
+                                <rect key="frame" x="32" y="291" width="326" height="128"/>
                                 <color key="backgroundColor" red="0.32156862749999998" green="0.62745098040000002" blue="0.1784119898" alpha="0.39515211090000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -40,10 +56,11 @@
                             <outletCollection property="gestureRecognizers" destination="kfr-5P-uQ1" appends="YES" id="zcX-fS-6rh"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="qkq-L8-cfE"/>
                     <connections>
                         <outlet property="greenView" destination="xut-Lr-nnn" id="qbp-nR-YRT"/>
-                        <outlet property="tapGestureRecognizer" destination="kfr-5P-uQ1" id="ChV-2z-npL"/>
-                        <outlet property="viewTopConstraint" destination="ZfJ-9b-DwO" id="XQR-Bu-4Su"/>
+                        <outlet property="tapGestureRecognizer" destination="kfr-5P-uQ1" id="PBM-5o-SUM"/>
+                        <outlet property="viewTopConstraint" destination="ZfJ-9b-DwO" id="XGr-I1-oIY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -54,7 +71,7 @@
         <!--NextVC-->
         <scene sceneID="id6-UG-aac">
             <objects>
-                <viewController id="Xbv-Q6-Ney" customClass="nextVC" customModule="Week8" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xbv-Q6-Ney" customClass="NextVC" customModule="Week8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QNb-NL-7Zr">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

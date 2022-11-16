@@ -13,11 +13,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-        window?.windowScene = windowScene
-        window?.makeKeyAndVisible()
-        window?.rootViewController = UINavigationController(rootViewController: ViewController())
+//        guard let windowScene = (scene as? UIWindowScene) else { return }
+//        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+//        window?.windowScene = windowScene
+//        window?.makeKeyAndVisible()
+//        window?.rootViewController = UINavigationController(rootViewController: ViewController())
+        
+        // rootViewController : 진입점이 2개라서 오류가 났었다!
+        // 이건 스토리보드 없이 코드로 작성할 때 써야했던 것 !
+        // 꺄울 :)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
