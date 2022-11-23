@@ -12,6 +12,10 @@
 		5534B91E292DA44F00A0261F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5534B91C292DA44F00A0261F /* Main.storyboard */; };
 		5534B920292DA45000A0261F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5534B91F292DA45000A0261F /* Assets.xcassets */; };
 		5534B923292DA45000A0261F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5534B921292DA45000A0261F /* LaunchScreen.storyboard */; };
+		55627B39292DAC9600CE2844 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 55627B38292DAC9600CE2844 /* Alamofire */; };
+		55627B3B292DAD8900CE2844 /* MoonAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55627B3A292DAD8900CE2844 /* MoonAPIManager.swift */; };
+		55645244292E082600E7A415 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 55645243292E082600E7A415 /* SwiftyJSON */; };
+		55645246292E10FC00E7A415 /* MoonDayCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55645245292E10FC00E7A415 /* MoonDayCodable.swift */; };
 		5565AFBB292DAA7800A91B8E /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5565AFBA292DAA7800A91B8E /* DatePickerViewController.swift */; };
 		5565AFBD292DAA8800A91B8E /* MoonResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5565AFBC292DAA8800A91B8E /* MoonResultViewController.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +28,8 @@
 		5534B91F292DA45000A0261F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5534B922292DA45000A0261F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5534B924292DA45000A0261F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55627B3A292DAD8900CE2844 /* MoonAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonAPIManager.swift; sourceTree = "<group>"; };
+		55645245292E10FC00E7A415 /* MoonDayCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonDayCodable.swift; sourceTree = "<group>"; };
 		5565AFBA292DAA7800A91B8E /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		5565AFBC292DAA8800A91B8E /* MoonResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55645244292E082600E7A415 /* SwiftyJSON in Frameworks */,
+				55627B39292DAC9600CE2844 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +68,8 @@
 			children = (
 				5534B916292DA44F00A0261F /* AppDelegate.swift */,
 				5534B918292DA44F00A0261F /* SceneDelegate.swift */,
+				55627B3A292DAD8900CE2844 /* MoonAPIManager.swift */,
+				55645245292E10FC00E7A415 /* MoonDayCodable.swift */,
 				5565AFBA292DAA7800A91B8E /* DatePickerViewController.swift */,
 				5565AFBC292DAA8800A91B8E /* MoonResultViewController.swift */,
 				5534B91C292DA44F00A0261F /* Main.storyboard */,
@@ -86,6 +96,10 @@
 			dependencies = (
 			);
 			name = Week9;
+			packageProductDependencies = (
+				55627B38292DAC9600CE2844 /* Alamofire */,
+				55645243292E082600E7A415 /* SwiftyJSON */,
+			);
 			productName = Week9;
 			productReference = 5534B913292DA44F00A0261F /* Week9.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +128,10 @@
 				Base,
 			);
 			mainGroup = 5534B90A292DA44F00A0261F;
+			packageReferences = (
+				55627B37292DAC9600CE2844 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				55645242292E082600E7A415 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 5534B914292DA44F00A0261F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,6 +162,8 @@
 				5565AFBD292DAA8800A91B8E /* MoonResultViewController.swift in Sources */,
 				5534B917292DA44F00A0261F /* AppDelegate.swift in Sources */,
 				5565AFBB292DAA7800A91B8E /* DatePickerViewController.swift in Sources */,
+				55627B3B292DAD8900CE2844 /* MoonAPIManager.swift in Sources */,
+				55645246292E10FC00E7A415 /* MoonDayCodable.swift in Sources */,
 				5534B919292DA44F00A0261F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +382,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		55627B37292DAC9600CE2844 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		55645242292E082600E7A415 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		55627B38292DAC9600CE2844 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55627B37292DAC9600CE2844 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		55645243292E082600E7A415 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 55645242292E082600E7A415 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5534B90B292DA44F00A0261F /* Project object */;
 }

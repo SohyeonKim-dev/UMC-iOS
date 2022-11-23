@@ -11,6 +11,6 @@ class datePickerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        getMoonDate()
     }
 }
